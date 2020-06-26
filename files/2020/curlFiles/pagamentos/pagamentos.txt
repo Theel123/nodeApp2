@@ -1,0 +1,17 @@
+-- curl para deletar um pagamento
+
+curl -X DELETE http://localhost:3000/pagamentos/pagamento/(id) -v
+
+
+
+
+-- curl para adicionar um pagamento
+
+curl http://localhost:3000/pagamentos/pagamento -X POST -v -H "Content-type: application/json" -d @files/2020/jsonFiles/pagamentos/pagamento.json | json_pp
+
+
+
+
+-- curl para atualizar um pagamento
+
+curl -X PUT http://localhost:3000/pagamentos/pagamento/(id) -v
